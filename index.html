@@ -33,13 +33,13 @@
             <a href="#mission" class="nav-link m-2 menu-item">Misión</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="nav-link m-2 menu-item">Colección</a>
+            <a href="#collection" class="nav-link m-2 menu-item">Colección</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="nav-link m-2 menu-item">Galería</a>
+            <a href="#gallery" class="nav-link m-2 menu-item">Galería</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="nav-link m-2 menu-item">Clientes</a>
+            <a href="#customers" class="nav-link m-2 menu-item">Clientes</a>
           </li>
           <li class="navbar-item">
             <a href="#" class="nav-link m-2 menu-item">Costos</a>
@@ -63,7 +63,7 @@
   <!-- end of header -->
 
   <!-- mission -->
-  <section class="p-5 mission">
+  <section id="mission" class="p-5 mission">
     <div class="container-fluid">
 
       <!-- title -->
@@ -110,7 +110,7 @@
   <!-- end of mission -->
 
   <!-- collection -->
-  <section class="bg-secondary py-4">
+  <section id="collection" class="bg-secondary py-4">
     <div class="container-fluid">
 
       <!-- title -->
@@ -178,7 +178,7 @@
   <!-- end of collection -->
 
   <!-- gallery -->
-  <section class="py-5">
+  <section id="gallery" class="py-5">
     <div class="container-fluid">
 
       <!-- title -->
@@ -220,60 +220,176 @@
   </section>
   <!-- end of gallery -->
 
-  <!-- customers -->
-  <section class="p-5 customers">
-    <div class="container-fluid">
-
-      <!-- title -->
-      <div class="row text-white text-center">
-        <div class="col m-4">
-          <h1 class="display-4 mb-4">Clientes Satisfechos</h1>
-          <div class="underline mb-4"></div>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero accusamus, nisi cumque dolorum maxime consequatur voluptate.</p>
-        </div>
+ <!-- customers -->
+ <section id="customers" class="p-5 customers">
+  <div class="container-fluid">
+    <!-- title -->
+    <div class="row text-white text-center">
+      <div class="col m-4">
+        <h1 class="display-4 mb-4">Clientes Satisfechos</h1>
+        <div class="underline mb-4"></div>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolores non totam veritatis quam voluptatem rerum laudantium cupiditate ipsa?</p>
       </div>
-      <!-- end of title  -->
-      
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="carousel slide">
-            <ol class="carousel-indicators">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active text-center">
-                <img src="images/customer1.jpeg" class="image-fluid rounded-circle m-5" width="150">
-                <blockquote class="blockquote text-white">
-                  <p class="mb5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero blanditiis itaque iste necessitatibus facilis pariatur cumque consectetur corrupti odit adipisci!</p>
-                </blockquote>
-                <h5 class="text-light text-uppercase font-weight-bold mb-3">Mónica</h5>
-                <ul class="list-inline mb-5">
-                  <li class="list-inline-item">
-                    <i class="fas fa-star text-warning"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fas fa-star text-warning"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fas fa-star text-warning"></i>
-                  </li>
-                  <li class="list-inline-item">
-                    <i class="fas fa-star text-warning"></i>
-                  </li>
-                </ul>
-              </div>
+    </div>
+    <!-- end of title -->
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="carousel slide" data-ride="carousel" id="customer-carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#customer-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#customer-carousel" data-slide-to="1"></li>
+            <li data-target="#customer-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img src="images/customer1.jpeg" class="img-fluid rounded-circle m-5" width="150">
+              <blockquote class="blockquote text-white">
+                <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quasi id cumque molestiae a illo voluptatem voluptates expedita doloribus distinctio! Fuga, quo iure?!</p>
+              </blockquote>
+              <h5 class="text-light text-uppercase font-weight-bold mb-3">Mónica</h5>
+              <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="images/customer2.jpeg" class="img-fluid rounded-circle m-5" width="150">
+              <blockquote class="blockquote text-white">
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam eligendi ipsa. Nulla porro fugit nobis reiciendis explicabo amet quasi eius nihil.</p>
+              </blockquote>
+              <h5 class="text-light text-uppercase font-weight-bold mb-3">Michael</h5>
+              <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="carousel-item text-center">
+              <img src="images/customer3.jpeg" class="img-fluid rounded-circle m-5" width="150">
+              <blockquote class="blockquote text-white">
+                <p class="mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum earum fuga natus veritatis minima voluptatibus? Quae consequuntur beatae repudiandae aut!</p>
+              </blockquote>
+              <h5 class="text-light text-uppercase font-weight-bold mb-3">Jessica</h5>
+              <ul class="list-inline mb-5">
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fas fa-star text-warning"></i>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<!-- end of customers -->
 
+
+  <!-- pricing -->
+  <section class="bg-light text-center p-5">
+    <div class="container-fluid">
+      <!-- title -->
+      <div class="row text-muted text-center">
+        <div class="col m-4">
+          <h1 class="display-4 mb-4">Se Parte</h1>
+          <div class="underline-dark mb-4"></div>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
+        </div>
+      </div>
+      <!-- end of title -->
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <div class="card card-1 text-light py-4 my-4 mx-auto">
+            <div class="card-body">
+              <h5 class="text-uppercase font-weight-bold mb-5">Membresía Mensual</h5>
+              <h1 class="display-4"><i class="fas fa-dollar-sign"></i> 19</h1>
+              <ul class="list-unstyled">
+                <li class="font-weight-bold py-3 card-list-item">Photoshop</li>
+                <li class="font-weight-bold py-3 card-list-item">After Effects</li>
+                <li class="font-weight-bold py-3 card-list-item">Diseño Gráfico</li>
+                <li class="font-weight-bold py-3 card-list-item border-0">Video Montaje</li>
+              </ul>
+              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">¡Únete!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-2 text-light py-4 my-4 mx-auto">
+            <div class="card-body">
+              <h5 class="text-uppercase font-weight-bold mb-5">Membresía Vitalicia</h5>
+              <h1 class="display-4"><i class="fas fa-dollar-sign"></i> 499</h1>
+              <ul class="list-unstyled">
+                <li class="font-weight-bold py-3 card-list-item">Photoshop</li>
+                <li class="font-weight-bold py-3 card-list-item">After Effects</li>
+                <li class="font-weight-bold py-3 card-list-item">Diseño Gráfico</li>
+                <li class="font-weight-bold py-3 card-list-item ">Video Montaje</li>
+                <li class="font-weight-bold py-3 card-list-item border-0">Producción</li>
+              </ul>
+              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">¡Únete!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card card-3 text-light py-4 my-4 mx-auto">
+            <div class="card-body">
+              <h5 class="text-uppercase font-weight-bold mb-5">Membresía Anual</h5>
+              <h1 class="display-4"><i class="fas fa-dollar-sign"></i> 199</h1>
+              <ul class="list-unstyled">
+                <li class="font-weight-bold py-3 card-list-item">Photoshop</li>
+                <li class="font-weight-bold py-3 card-list-item">After Effects</li>
+                <li class="font-weight-bold py-3 card-list-item">Diseño Gráfico</li>
+                <li class="font-weight-bold py-3 card-list-item border-0">Video Montaje</li>
+              </ul>
+              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">¡Únete!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="text-muted mb-4">Gracias por elegirnos <h2>
+        <i class="fas fa-coffee fa-3x"></i>
+      </div>
     </div>
   </section>
+  <!-- end of pricing -->
 
-
-  <!-- end of customers -->
   
 
   <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
