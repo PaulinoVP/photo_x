@@ -315,8 +315,21 @@ header {
   margin: auto;
   }
 }
-
 /* end of contact */
+
+/* footer */
+.footer-link {
+  color: #eee;
+  font-size: 13;
+  transition: all .3s;
+}
+
+.footer-link:hover {
+  color: #70aed2;
+  text-decoration: none;
+}
+
+/* end of footer */
 
 
 
